@@ -8,13 +8,16 @@ var nome #Adicao de declaracao da variavel nome
 
 func _on_Button_pressed():
 	#Coletando dados inseridos pelo usuário
-	numero = int(LineEdit.text) #Correcao ú por u
+	numero = int($LineEdit2.text) 
+	# Correcao ú por u 
+	# Adicao de '$' antes de LineEdit
+	# Criacao de outro lineEdit para o numero
 	nome = $LineEdit.text #Correcao trocar numero e $LineEdit.text de ordem
 
 func _on_Button2_pressed():
-	#Incrementando o número inserido pelo usuário
+	# Incrementando o número inserido pelo usuário
 	for i in range(10):
-		numero+=i #Correcao N por n
+		numero += i #Correcao N por n
 		lista.append(numero) #Correcao N por n
 	numero = $Label.text #Correcao trocar numero e $Label.text de ordem
 
